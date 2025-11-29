@@ -1,0 +1,372 @@
+[
+    {
+        "Region": "00_全国",
+        "IndustryClassification": "00000_合計",
+        "BusinessActivity_Sales_MillionYen": "35249517",
+        "EstablishmentCompany_Sales_MillionYen": "35249517",
+        "EstablishmentCompany_TotalEmployees_People": "31021200",
+        "EstablishmentCompany_Dispatchers_People": "2035200",
+        "EstablishmentCompany_Recipients_People": "973800",
+        "EstablishmentCompany_Workers_People": "29959800"
+    },
+    {
+        "Region": "00_全国",
+        "IndustryClassification": "01000_サービス産業計",
+        "BusinessActivity_Sales_MillionYen": "34256166",
+        "EstablishmentCompany_Sales_MillionYen": "35249517",
+        "EstablishmentCompany_TotalEmployees_People": "31021200",
+        "EstablishmentCompany_Dispatchers_People": "2035200",
+        "EstablishmentCompany_Recipients_People": "973800",
+        "EstablishmentCompany_Workers_People": "29959800"
+    },
+    {
+        "Region": "00_全国",
+        "IndustryClassification": "02000_Ｇ情報通信業",
+        "BusinessActivity_Sales_MillionYen": "5953629",
+        "EstablishmentCompany_Sales_MillionYen": "6274795",
+        "EstablishmentCompany_TotalEmployees_People": "2104600",
+        "EstablishmentCompany_Dispatchers_People": "206500",
+        "EstablishmentCompany_Recipients_People": "227600",
+        "EstablishmentCompany_Workers_People": "2125600"
+    },
+    {
+        "Region": "00_全国",
+        "IndustryClassification": "03000_Ｌ学術研究，専門・技術サービス業",
+        "BusinessActivity_Sales_MillionYen": "3282294",
+        "EstablishmentCompany_Sales_MillionYen": "3394582",
+        "EstablishmentCompany_TotalEmployees_People": "3213000",
+        "EstablishmentCompany_Dispatchers_People": "165400",
+        "EstablishmentCompany_Recipients_People": "93600",
+        "EstablishmentCompany_Workers_People": "3141200"
+    },
+    {
+        "Region": "00_全国",
+        "IndustryClassification": "04000_Ｍ宿泊業，飲食サービス業",
+        "BusinessActivity_Sales_MillionYen": "7488924",
+        "EstablishmentCompany_Sales_MillionYen": "7616238",
+        "EstablishmentCompany_TotalEmployees_People": "7277800",
+        "EstablishmentCompany_Dispatchers_People": "778800",
+        "EstablishmentCompany_Recipients_People": "100900",
+        "EstablishmentCompany_Workers_People": "6600000"
+    },
+    {
+        "Region": "00_全国",
+        "IndustryClassification": "05000_Ｎ生活関連サービス業，娯楽業",
+        "BusinessActivity_Sales_MillionYen": "3671586",
+        "EstablishmentCompany_Sales_MillionYen": "3729423",
+        "EstablishmentCompany_TotalEmployees_People": "2072500",
+        "EstablishmentCompany_Dispatchers_People": "14800",
+        "EstablishmentCompany_Recipients_People": "51900",
+        "EstablishmentCompany_Workers_People": "2109600"
+    },
+    {
+        "Region": "00_全国",
+        "IndustryClassification": "06000_Ｏ教育，学習支援業",
+        "BusinessActivity_Sales_MillionYen": "320018",
+        "EstablishmentCompany_Sales_MillionYen": "311914",
+        "EstablishmentCompany_TotalEmployees_People": "953300",
+        "EstablishmentCompany_Dispatchers_People": "6400",
+        "EstablishmentCompany_Recipients_People": "11800",
+        "EstablishmentCompany_Workers_People": "958700"
+    },
+    {
+        "Region": "00_全国",
+        "IndustryClassification": "07000_Ｐ医療，福祉",
+        "BusinessActivity_Sales_MillionYen": "12879667",
+        "EstablishmentCompany_Sales_MillionYen": "12985392",
+        "EstablishmentCompany_TotalEmployees_People": "13768800",
+        "EstablishmentCompany_Dispatchers_People": "810100",
+        "EstablishmentCompany_Recipients_People": "469000",
+        "EstablishmentCompany_Workers_People": "13427700"
+    },
+    {
+        "Region": "00_全国",
+        "IndustryClassification": "08000_Ｑ複合サービス事業",
+        "BusinessActivity_Sales_MillionYen": "304677",
+        "EstablishmentCompany_Sales_MillionYen": "338902",
+        "EstablishmentCompany_TotalEmployees_People": "374200",
+        "EstablishmentCompany_Dispatchers_People": "4000",
+        "EstablishmentCompany_Recipients_People": "4000",
+        "EstablishmentCompany_Workers_People": "374200"
+    },
+    {
+        "Region": "00_全国",
+        "IndustryClassification": "09000_Ｒサービス業（他に分類されないもの）",
+        "BusinessActivity_Sales_MillionYen": "439161",
+        "EstablishmentCompany_Sales_MillionYen": "518263",
+        "EstablishmentCompany_TotalEmployees_People": "1268000",
+        "EstablishmentCompany_Dispatchers_People": "42600",
+        "EstablishmentCompany_Recipients_People": "25200",
+        "EstablishmentCompany_Workers_People": "1250600"
+    },
+    {
+        "Region": "00_全国",
+        "IndustryClassification": "10000_サービス産業以外",
+        "BusinessActivity_Sales_MillionYen": "993351",
+        "EstablishmentCompany_Sales_MillionYen": null,
+        "EstablishmentCompany_TotalEmployees_People": null,
+        "EstablishmentCompany_Dispatchers_People": null,
+        "EstablishmentCompany_Recipients_People": null,
+        "EstablishmentCompany_Workers_People": null
+    },
+    {
+        "Region": "00_全国",
+        "IndustryClassification": "01010_39情報サービス業",
+        "BusinessActivity_Sales_MillionYen": "3585324",
+        "EstablishmentCompany_Sales_MillionYen": "3784534",
+        "EstablishmentCompany_TotalEmployees_People": "1534000",
+        "EstablishmentCompany_Dispatchers_People": "147500",
+        "EstablishmentCompany_Recipients_People": "180300",
+        "EstablishmentCompany_Workers_People": "1566800"
+    },
+    {
+        "Region": "00_全国",
+        "IndustryClassification": "01020_40インターネット附随サービス業",
+        "BusinessActivity_Sales_MillionYen": "1731557",
+        "EstablishmentCompany_Sales_MillionYen": "1826848",
+        "EstablishmentCompany_TotalEmployees_People": "314600",
+        "EstablishmentCompany_Dispatchers_People": "48900",
+        "EstablishmentCompany_Recipients_People": "41500",
+        "EstablishmentCompany_Workers_People": "307200"
+    },
+    {
+        "Region": "00_全国",
+        "IndustryClassification": "01030_41映像・音声・文字情報制作業",
+        "BusinessActivity_Sales_MillionYen": "636748",
+        "EstablishmentCompany_Sales_MillionYen": "663413",
+        "EstablishmentCompany_TotalEmployees_People": "256000",
+        "EstablishmentCompany_Dispatchers_People": "100",
+        "EstablishmentCompany_Recipients_People": "5800",
+        "EstablishmentCompany_Workers_People": "261700"
+    },
+    {
+        "Region": "00_全国",
+        "IndustryClassification": "02010_42学術・開発研究機関",
+        "BusinessActivity_Sales_MillionYen": "214044",
+        "EstablishmentCompany_Sales_MillionYen": null,
+        "EstablishmentCompany_TotalEmployees_People": null,
+        "EstablishmentCompany_Dispatchers_People": null,
+        "EstablishmentCompany_Recipients_People": null,
+        "EstablishmentCompany_Workers_People": null
+    },
+    {
+        "Region": "00_全国",
+        "IndustryClassification": "02020_43専門サービス業",
+        "BusinessActivity_Sales_MillionYen": "1369527",
+        "EstablishmentCompany_Sales_MillionYen": "1425121",
+        "EstablishmentCompany_TotalEmployees_People": "1517400",
+        "EstablishmentCompany_Dispatchers_People": "65100",
+        "EstablishmentCompany_Recipients_People": "28100",
+        "EstablishmentCompany_Workers_People": "1480400"
+    },
+    {
+        "Region": "00_全国",
+        "IndustryClassification": "02030_44技術サービス業",
+        "BusinessActivity_Sales_MillionYen": "1706723",
+        "EstablishmentCompany_Sales_MillionYen": "1809461",
+        "EstablishmentCompany_TotalEmployees_People": "1695600",
+        "EstablishmentCompany_Dispatchers_People": "100300",
+        "EstablishmentCompany_Recipients_People": "65500",
+        "EstablishmentCompany_Workers_People": "1660800"
+    },
+    {
+        "Region": "00_全国",
+        "IndustryClassification": "03010_45宿泊業",
+        "BusinessActivity_Sales_MillionYen": "1468164",
+        "EstablishmentCompany_Sales_MillionYen": "1497917",
+        "EstablishmentCompany_TotalEmployees_People": "1426400",
+        "EstablishmentCompany_Dispatchers_People": "174600",
+        "EstablishmentCompany_Recipients_People": "10600",
+        "EstablishmentCompany_Workers_People": "1262400"
+    },
+    {
+        "Region": "00_全国",
+        "IndustryClassification": "03020_46飲食店",
+        "BusinessActivity_Sales_MillionYen": "5779059",
+        "EstablishmentCompany_Sales_MillionYen": "5849886",
+        "EstablishmentCompany_TotalEmployees_People": "5449200",
+        "EstablishmentCompany_Dispatchers_People": "592100",
+        "EstablishmentCompany_Recipients_People": "89300",
+        "EstablishmentCompany_Workers_People": "4946400"
+    },
+    {
+        "Region": "00_全国",
+        "IndustryClassification": "03030_47持ち帰り・配達飲食サービス業",
+        "BusinessActivity_Sales_MillionYen": "241701",
+        "EstablishmentCompany_Sales_MillionYen": "268435",
+        "EstablishmentCompany_TotalEmployees_People": "402200",
+        "EstablishmentCompany_Dispatchers_People": "12100",
+        "EstablishmentCompany_Recipients_People": "1000",
+        "EstablishmentCompany_Workers_People": "391100"
+    },
+    {
+        "Region": "00_全国",
+        "IndustryClassification": "04010_78洗濯・理容・美容・浴場業",
+        "BusinessActivity_Sales_MillionYen": "432721",
+        "EstablishmentCompany_Sales_MillionYen": "437322",
+        "EstablishmentCompany_TotalEmployees_People": "960300",
+        "EstablishmentCompany_Dispatchers_People": "1800",
+        "EstablishmentCompany_Recipients_People": "9500",
+        "EstablishmentCompany_Workers_People": "968000"
+    },
+    {
+        "Region": "00_全国",
+        "IndustryClassification": "04020_79その他の生活関連サービス業",
+        "BusinessActivity_Sales_MillionYen": "569502",
+        "EstablishmentCompany_Sales_MillionYen": "572610",
+        "EstablishmentCompany_TotalEmployees_People": "365500",
+        "EstablishmentCompany_Dispatchers_People": "6600",
+        "EstablishmentCompany_Recipients_People": "11300",
+        "EstablishmentCompany_Workers_People": "370200"
+    },
+    {
+        "Region": "00_全国",
+        "IndustryClassification": "04030_80娯楽業",
+        "BusinessActivity_Sales_MillionYen": "2669362",
+        "EstablishmentCompany_Sales_MillionYen": "2719491",
+        "EstablishmentCompany_TotalEmployees_People": "746700",
+        "EstablishmentCompany_Dispatchers_People": "6500",
+        "EstablishmentCompany_Recipients_People": "31100",
+        "EstablishmentCompany_Workers_People": "771400"
+    },
+    {
+        "Region": "00_全国",
+        "IndustryClassification": "05010_82その他の教育，学習支援業",
+        "BusinessActivity_Sales_MillionYen": "320018",
+        "EstablishmentCompany_Sales_MillionYen": "311914",
+        "EstablishmentCompany_TotalEmployees_People": "953300",
+        "EstablishmentCompany_Dispatchers_People": "6400",
+        "EstablishmentCompany_Recipients_People": "11800",
+        "EstablishmentCompany_Workers_People": "958700"
+    },
+    {
+        "Region": "00_全国",
+        "IndustryClassification": "06010_83医療業",
+        "BusinessActivity_Sales_MillionYen": "10710688",
+        "EstablishmentCompany_Sales_MillionYen": "10816413",
+        "EstablishmentCompany_TotalEmployees_People": "7303800",
+        "EstablishmentCompany_Dispatchers_People": "339100",
+        "EstablishmentCompany_Recipients_People": "252200",
+        "EstablishmentCompany_Workers_People": "7216900"
+    },
+    {
+        "Region": "00_全国",
+        "IndustryClassification": "06020_85社会保険・社会福祉・介護事業",
+        "BusinessActivity_Sales_MillionYen": "2168979",
+        "EstablishmentCompany_Sales_MillionYen": "2168979",
+        "EstablishmentCompany_TotalEmployees_People": "6465000",
+        "EstablishmentCompany_Dispatchers_People": "471000",
+        "EstablishmentCompany_Recipients_People": "216800",
+        "EstablishmentCompany_Workers_People": "6210800"
+    },
+    {
+        "Region": "00_全国",
+        "IndustryClassification": "07010_87郵便局",
+        "BusinessActivity_Sales_MillionYen": "291079",
+        "EstablishmentCompany_Sales_MillionYen": "325204",
+        "EstablishmentCompany_TotalEmployees_People": "358800",
+        "EstablishmentCompany_Dispatchers_People": "4000",
+        "EstablishmentCompany_Recipients_People": "4000",
+        "EstablishmentCompany_Workers_People": "358800"
+    },
+    {
+        "Region": "00_全国",
+        "IndustryClassification": "07020_88協同組合（他に分類されないもの）",
+        "BusinessActivity_Sales_MillionYen": "13598",
+        "EstablishmentCompany_Sales_MillionYen": "13698",
+        "EstablishmentCompany_TotalEmployees_People": "15400",
+        "EstablishmentCompany_Dispatchers_People": "0",
+        "EstablishmentCompany_Recipients_People": "0",
+        "EstablishmentCompany_Workers_People": "15400"
+    },
+    {
+        "Region": "00_全国",
+        "IndustryClassification": "08010_90廃棄物処理業",
+        "BusinessActivity_Sales_MillionYen": "177264",
+        "EstablishmentCompany_Sales_MillionYen": "180903",
+        "EstablishmentCompany_TotalEmployees_People": "283700",
+        "EstablishmentCompany_Dispatchers_People": "13700",
+        "EstablishmentCompany_Recipients_People": "9400",
+        "EstablishmentCompany_Workers_People": "279400"
+    },
+    {
+        "Region": "00_全国",
+        "IndustryClassification": "08020_91自動車整備業",
+        "BusinessActivity_Sales_MillionYen": "74868",
+        "EstablishmentCompany_Sales_MillionYen": "94380",
+        "EstablishmentCompany_TotalEmployees_People": "232300",
+        "EstablishmentCompany_Dispatchers_People": "2900",
+        "EstablishmentCompany_Recipients_People": "2400",
+        "EstablishmentCompany_Workers_People": "231800"
+    },
+    {
+        "Region": "00_全国",
+        "IndustryClassification": "08030_92機械等修理業（自動車整備業を除く）",
+        "BusinessActivity_Sales_MillionYen": "8101",
+        "EstablishmentCompany_Sales_MillionYen": "8101",
+        "EstablishmentCompany_TotalEmployees_People": "34900",
+        "EstablishmentCompany_Dispatchers_People": "100",
+        "EstablishmentCompany_Recipients_People": "300",
+        "EstablishmentCompany_Workers_People": "35100"
+    },
+    {
+        "Region": "00_全国",
+        "IndustryClassification": "08040_93職業紹介・労働者派遣業",
+        "BusinessActivity_Sales_MillionYen": "129851",
+        "EstablishmentCompany_Sales_MillionYen": "186350",
+        "EstablishmentCompany_TotalEmployees_People": "586600",
+        "EstablishmentCompany_Dispatchers_People": "25000",
+        "EstablishmentCompany_Recipients_People": "11000",
+        "EstablishmentCompany_Workers_People": "572600"
+    },
+    {
+        "Region": "00_全国",
+        "IndustryClassification": "08050_94その他の事業サービス業",
+        "BusinessActivity_Sales_MillionYen": "35677",
+        "EstablishmentCompany_Sales_MillionYen": "48529",
+        "EstablishmentCompany_TotalEmployees_People": "126800",
+        "EstablishmentCompany_Dispatchers_People": "1000",
+        "EstablishmentCompany_Recipients_People": "1100",
+        "EstablishmentCompany_Workers_People": "126900"
+    },
+    {
+        "Region": "00_全国",
+        "IndustryClassification": "08060_95政治・経済・文化団体",
+        "BusinessActivity_Sales_MillionYen": "5820",
+        "EstablishmentCompany_Sales_MillionYen": null,
+        "EstablishmentCompany_TotalEmployees_People": null,
+        "EstablishmentCompany_Dispatchers_People": null,
+        "EstablishmentCompany_Recipients_People": null,
+        "EstablishmentCompany_Workers_People": null
+    },
+    {
+        "Region": "00_全国",
+        "IndustryClassification": "08070_96宗教",
+        "BusinessActivity_Sales_MillionYen": "5000",
+        "EstablishmentCompany_Sales_MillionYen": null,
+        "EstablishmentCompany_TotalEmployees_People": null,
+        "EstablishmentCompany_Dispatchers_People": null,
+        "EstablishmentCompany_Recipients_People": null,
+        "EstablishmentCompany_Workers_People": null
+    },
+    {
+        "Region": "00_全国",
+        "IndustryClassification": "08080_97外国公務",
+        "BusinessActivity_Sales_MillionYen": "1000",
+        "EstablishmentCompany_Sales_MillionYen": null,
+        "EstablishmentCompany_TotalEmployees_People": null,
+        "EstablishmentCompany_Dispatchers_People": null,
+        "EstablishmentCompany_Recipients_People": null,
+        "EstablishmentCompany_Workers_People": null
+    },
+    {
+        "Region": "00_全国",
+        "IndustryClassification": "08090_99他に分類されないサービス業",
+        "BusinessActivity_Sales_MillionYen": "225139",
+        "EstablishmentCompany_Sales_MillionYen": "280000",
+        "EstablishmentCompany_TotalEmployees_People": "0",
+        "EstablishmentCompany_Dispatchers_People": "0",
+        "EstablishmentCompany_Recipients_People": "0",
+        "EstablishmentCompany_Workers_People": "0"
+    }
+]
