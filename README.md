@@ -1,73 +1,28 @@
-# React + TypeScript + Vite
+# nuqs example
+This is an example project demonstrating the usage of the [nuqs](https://github.com/motozono/nuqs) library for managing URL query string state in React applications.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The project includes two main components: DataList and DataListNoNuqs. The DataList component utilizes the nuqs library to synchronize its state with the URL query string, while the DataListNoNuqs component manages its state internally without using nuqs.
 
-Currently, two official plugins are available:
+Both components display a list of data items and provide filtering functionality based on user input. The shared styles for both components are located in the `src/assets/styles/DataListStyles.css` file.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started
+To run the example project, follow these steps:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/motozono/nuqs.git
+2. Navigate to the example directory:
+   ```bash
+   cd nuqs/example-nuqs
+3. Install the dependencies:
+   ```bash
+   npm install
+4. Start the development server:
+   ```bash
+   npm run dev
+5. Open your browser and navigate to `http://localhost:3000` to see the example in action.
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Project Structure
+- `src/components/DataList.tsx`: The DataList component that uses nuqs for URL query string state management.
+- `src/components/DataListNoNuqs.tsx`: The DataListNoNuqs component that manages state internally without nuqs.
+- `src/assets/styles/DataListStyles.css`: Shared styles for both DataList and DataListNoNuqs components.
+- `src/data/m010_data_cleaned_final.json`: Sample data used by both components.
