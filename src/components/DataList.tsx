@@ -198,6 +198,7 @@ const DataList: React.FC = () => {
           padding: 8px;
           border: 1px solid #ccc;
           border-radius: 4px;
+          color: black;
         }
         .data-table {
           width: 100%;
