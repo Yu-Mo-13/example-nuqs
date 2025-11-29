@@ -1,5 +1,5 @@
-import React from 'react';
-import { useQueryStates, parseAsInteger, parseAsString } from 'nuqs';
+import React, { useState, useCallback } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import data from '../data/m010_data_cleaned_final.json';
 import '../assets/styles/DataListStyles.css'; // Import the shared styles
 
@@ -15,51 +15,89 @@ interface DataItem {
   EstablishmentCompany_Workers_People: string | null;
 }
 
-const DataList: React.FC = () => {
-  const [filters, setFilters] = useQueryStates({
-    region: parseAsString.withDefault(''),
-    industry: parseAsString.withDefault(''),
-    businessActivitySales: parseAsInteger,
-    establishmentSales: parseAsInteger,
-    totalEmployees: parseAsInteger,
-    dispatchers: parseAsInteger,
-    recipients: parseAsInteger,
-    workers: parseAsInteger,
+// Custom hook to manage state in URL query string
+const useQueryStringState = (key: string, initialValue: string | number | null) => {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const [value, setValue] = useState(() => {
+    const params = new URLSearchParams(location.search);
+    const paramValue = params.get(key);
+    if (paramValue === null) {
+      return initialValue;
+    }
+    if (typeof initialValue === 'number') {
+      const num = Number(paramValue);
+      return isNaN(num) ? initialValue : num;
+    }
+    return paramValue;
   });
 
+  const updateUrl = useCallback(
+    (newValue: string | number | null) => {
+      const params = new URLSearchParams(location.search);
+      if (newValue === null || newValue === '') {
+        params.delete(key);
+      } else {
+        params.set(key, String(newValue));
+      }
+      navigate(`${location.pathname}?${params.toString()}`, { replace: true });
+    },
+    [key, location.pathname, location.search, navigate]
+  );
+
+  const setStateValue = (newValue: string | number | null) => {
+    setValue(newValue);
+    updateUrl(newValue);
+  };
+
+  return [value, setStateValue] as const;
+};
+
+
+const DataListNoNuqs: React.FC = () => {
+  const [region, setRegion] = useQueryStringState('region', '');
+  const [industry, setIndustry] = useQueryStringState('industry', '');
+  const [businessActivitySales, setBusinessActivitySales] = useQueryStringState('businessActivitySales', null);
+  const [establishmentSales, setEstablishmentSales] = useQueryStringState('establishmentSales', null);
+  const [totalEmployees, setTotalEmployees] = useQueryStringState('totalEmployees', null);
+  const [dispatchers, setDispatchers] = useQueryStringState('dispatchers', null);
+  const [recipients, setRecipients] = useQueryStringState('recipients', null);
+  const [workers, setWorkers] = useQueryStringState('workers', null);
+
+
   const filteredData = data.filter((item: DataItem) => {
-    const regionMatch = !filters.region || item.Region.includes(filters.region);
-    const industryMatch = !filters.industry || item.IndustryClassification.includes(filters.industry);
+    const regionMatch = !region || item.Region.includes(region as string);
+    const industryMatch = !industry || item.IndustryClassification.includes(industry as string);
 
     const businessActivitySalesMatch =
-      !filters.businessActivitySales ||
+      businessActivitySales === null ||
       (item.BusinessActivity_Sales_MillionYen &&
-        Number(item.BusinessActivity_Sales_MillionYen) >= filters.businessActivitySales);
+        Number(item.BusinessActivity_Sales_MillionYen) >= (businessActivitySales as number));
 
     const establishmentSalesMatch =
-      !filters.establishmentSales ||
+    establishmentSales === null ||
       (item.EstablishmentCompany_Sales_MillionYen &&
-        Number(item.EstablishmentCompany_Sales_MillionYen) >= filters.establishmentSales);
+        Number(item.EstablishmentCompany_Sales_MillionYen) >= (establishmentSales as number));
 
     const totalEmployeesMatch =
-      !filters.totalEmployees ||
+    totalEmployees === null ||
       (item.EstablishmentCompany_TotalEmployees_People &&
-        Number(item.EstablishmentCompany_TotalEmployees_People) >= filters.totalEmployees);
+        Number(item.EstablishmentCompany_TotalEmployees_People) >= (totalEmployees as number));
 
     const dispatchersMatch =
-      !filters.dispatchers ||
+    dispatchers === null ||
       (item.EstablishmentCompany_Dispatchers_People &&
-        Number(item.EstablishmentCompany_Dispatchers_People) >= filters.dispatchers);
+        Number(item.EstablishmentCompany_Dispatchers_People) >= (dispatchers as number));
 
     const recipientsMatch =
-      !filters.recipients ||
+    recipients === null ||
       (item.EstablishmentCompany_Recipients_People &&
-        Number(item.EstablishmentCompany_Recipients_People) >= filters.recipients);
+        Number(item.EstablishmentCompany_Recipients_People) >= (recipients as number));
 
     const workersMatch =
-      !filters.workers ||
+    workers === null ||
       (item.EstablishmentCompany_Workers_People &&
-        Number(item.EstablishmentCompany_Workers_People) >= filters.workers);
+        Number(item.EstablishmentCompany_Workers_People) >= (workers as number));
 
     return (
       regionMatch &&
@@ -75,56 +113,56 @@ const DataList: React.FC = () => {
 
   return (
     <div className="data-list-container">
-      <h1>サービス産業動態統計調査</h1>
+      <h1>サービス産業動態統計調査 (No Nuqs)</h1>
 
       <div className="filter-controls">
         <input
           type="text"
           placeholder="Filter by Region"
-          value={filters.region}
-          onChange={(e) => setFilters({ region: e.target.value || null })}
+          value={region || ''}
+          onChange={(e) => setRegion(e.target.value)}
         />
         <input
           type="text"
           placeholder="Filter by Industry"
-          value={filters.industry}
-          onChange={(e) => setFilters({ industry: e.target.value || null })}
+          value={industry || ''}
+          onChange={(e) => setIndustry(e.target.value)}
         />
         <input
           type="number"
           placeholder="Min Business Activity Sales"
-          value={filters.businessActivitySales ?? ''}
-          onChange={(e) => setFilters({ businessActivitySales: e.target.valueAsNumber || null })}
+          value={businessActivitySales ?? ''}
+          onChange={(e) => setBusinessActivitySales(e.target.valueAsNumber || null)}
         />
         <input
           type="number"
           placeholder="Min Establishment Sales"
-          value={filters.establishmentSales ?? ''}
-          onChange={(e) => setFilters({ establishmentSales: e.target.valueAsNumber || null })}
+          value={establishmentSales ?? ''}
+          onChange={(e) => setEstablishmentSales(e.target.valueAsNumber || null)}
         />
         <input
           type="number"
           placeholder="Min Total Employees"
-          value={filters.totalEmployees ?? ''}
-          onChange={(e) => setFilters({ totalEmployees: e.target.valueAsNumber || null })}
+          value={totalEmployees ?? ''}
+          onChange={(e) => setTotalEmployees(e.target.valueAsNumber || null)}
         />
         <input
           type="number"
           placeholder="Min Dispatchers"
-          value={filters.dispatchers ?? ''}
-          onChange={(e) => setFilters({ dispatchers: e.target.valueAsNumber || null })}
+          value={dispatchers ?? ''}
+          onChange={(e) => setDispatchers(e.target.valueAsNumber || null)}
         />
         <input
           type="number"
           placeholder="Min Recipients"
-          value={filters.recipients ?? ''}
-          onChange={(e) => setFilters({ recipients: e.target.valueAsNumber || null })}
+          value={recipients ?? ''}
+          onChange={(e) => setRecipients(e.target.valueAsNumber || null)}
         />
         <input
           type="number"
           placeholder="Min Workers"
-          value={filters.workers ?? ''}
-          onChange={(e) => setFilters({ workers: e.target.valueAsNumber || null })}
+          value={workers ?? ''}
+          onChange={(e) => setWorkers(e.target.valueAsNumber || null)}
         />
       </div>
 
@@ -184,4 +222,4 @@ const DataList: React.FC = () => {
   );
 };
 
-export default DataList;
+export default DataListNoNuqs;
