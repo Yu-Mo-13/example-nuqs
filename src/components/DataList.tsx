@@ -27,8 +27,8 @@ const DataList: React.FC = () => {
   });
 
   const filteredData = data.filter((item: DataItem) => {
-    const regionMatch = !filters.region || item.Region === filters.region;
-    const industryMatch = !filters.industry || item.IndustryClassification === filters.industry;
+    const regionMatch = !filters.region || item.Region.includes(filters.region);
+    const industryMatch = !filters.industry || item.IndustryClassification.includes(filters.industry);
 
     const businessActivitySalesMatch =
       !filters.businessActivitySales ||
