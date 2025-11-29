@@ -1,6 +1,7 @@
 import React, { useState, useCallback } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import data from '../data/m010_data_cleaned_final.json';
+import '../assets/styles/DataListStyles.css'; // Import the shared styles
 
 // Define the type for a single data item
 interface DataItem {
@@ -217,48 +218,6 @@ const DataListNoNuqs: React.FC = () => {
           ))}
         </tbody>
       </table>
-
-      <style>{`
-        .data-list-container {
-          padding: 20px;
-          font-family: sans-serif;
-          background-color: white;
-          color: black;
-        }
-        .filter-controls {
-          display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-          gap: 10px;
-          margin-bottom: 20px;
-        }
-        .filter-controls input {
-          background-color: #f2f2f2;
-          padding: 8px;
-          border: 1px solid #ccc;
-          border-radius: 4px;
-          color: black;
-        }
-        .data-table {
-          width: 100%;
-          border-collapse: collapse;
-          margin-top: 20px;
-        }
-        .data-table th, .data-table td {
-          border: 1px solid #ddd;
-          padding: 8px;
-          text-align: left;
-        }
-        .data-table th {
-          background-color: #f2f2f2;
-          font-weight: bold;
-        }
-        .data-table tbody tr:nth-child(even) {
-          background-color: white;
-        }
-        .data-table tbody tr:hover {
-          background-color: #f5f5f5;
-        }
-      `}</style>
     </div>
   );
 };
