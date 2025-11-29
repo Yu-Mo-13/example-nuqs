@@ -194,6 +194,7 @@ const DataList: React.FC = () => {
           margin-bottom: 20px;
         }
         .filter-controls input {
+          background-color: #f2f2f2;
           padding: 8px;
           border: 1px solid #ccc;
           border-radius: 4px;
